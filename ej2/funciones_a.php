@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Muestra una tabla HTML con tantas filas y columnas como indican los parámetros de entrada. Rellena cada posición con un número aleatorio entre 0 y 10.
+ * @param int $filas Número de filas de la tabla resultado.
+ * @param int $cols Número de columnas de la tabla resultado.
+ * @return void
+ */
 function mostrarTabla(int $filas, int $cols): void
 {
 
@@ -26,14 +31,4 @@ function mostrarTabla(int $filas, int $cols): void
 }
 
 
-function crearMatriz(int $filas, int $cols): array
-{
-    $resultado = [];
-    for ($i = 0; $i < $filas; $i++) {
 
-        for ($k = 0; $k < $cols; $k++) {
-            $resultado[$i][$k] = rand(0, 10);
-        }
-    }
-    return $resultado;
-}

@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Crea una matriz bidimensional de tantas filas y columnas como indican los parámetros de entrada. Rellena cada celda con un número aleatorio entre 0 y 10.
+ * @param int $filas Número de filas.
+ * @param int $cols Número de columnas.
+ * @return int[][] La matriz creada.
+ */
 function crearMatriz(int $filas, int $cols): array
 {
     $resultado = [];
@@ -11,7 +16,12 @@ function crearMatriz(int $filas, int $cols): array
     }
     return $resultado;
 }
-
+/**
+ * Muestra una tabla HTML a partir de un array bidimensional mostrando en cada celda cada uno de los valores almacenados en el array
+ * 
+ * @param array $array Array bidimensional de entrada.
+ * @return void
+ */
 function mostrarMatriz(array $array): void
 {
 
